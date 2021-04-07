@@ -1,0 +1,900 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+ul,
+ol {
+    list-style-type: none;
+}
+.clr {
+    clear: both;
+}
+.mr-0 {
+    margin-right: 0 !important;
+}
+
+/* ============== STICKY MENU BAR PART ================ */
+.preloader{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+}
+.loader{
+    width: 50px;
+    height: 50px;
+    border: 5px solid;
+    color: #3498db;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: loader 1.2s linear infinite;
+}
+@keyframes loader{
+    20%{
+        color: #ff6e02;
+    }
+    40%{
+        color: #f1c40f;
+    }
+    60%{
+        color: #e74c3c;
+    }
+    80%{
+        color: #000;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* ============== STICKY MENU BAR PART ================ */
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all linear .5s;
+    z-index: 999;
+}
+.navbar-toggler i{
+    color: #fff;
+}
+.bg{
+    background: #000;   
+    animation: menu 1.5s;
+    height: 70px;
+}
+@keyframes menu {
+    from{top:-50px}
+    to {top:0}
+}
+
+/* ========== NAV-BAR START CSS ========== */
+.navbar-brand img {
+    height: 45px;
+}
+.navbar .navbar-nav .nav-item {
+    padding-right: 14px;
+}
+.navbar .navbar-nav .nav-link {
+    font-family: 'Rancho', cursive;
+    font-size: 20px;
+    text-transform: capitalize;
+    line-height: 70px;
+    color:#fff;
+    transition: all linear .3s;
+    position: relative;
+}
+.navbar .navbar-nav .nav-link::before{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 3px;
+    top: 25px;
+    left: 0;
+    background: #ff6e02;
+    transition: all linear .3s;
+    opacity: 0;
+}
+.navbar .navbar-nav .nav-link::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 3px;
+    bottom: 25px;
+    right: 0;
+    background: #ff6e02;
+    transition: all linear .3s;
+    opacity: 0;
+}
+.navbar .navbar-nav .nav-link:hover{
+    color: #ff6e02;
+}
+.navbar .navbar-nav .nav-link:hover::before{
+    opacity: 1;
+    width: 100%;
+}
+.navbar .navbar-nav .nav-link:hover::after{
+    opacity: 1;
+    width: 100%;
+}
+.search-box{
+    border-radius: 40px;
+    padding: 10px 20px;
+}
+.search-box input{
+    font-family: 'Gudea', sans-serif 
+    font-size: 20px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+.search-box:hover .search-text {
+    width: 240px;
+    padding: 0 6px;
+    border: 1px solid #ff6e02;
+    color: #fff;
+}
+.search-text::placeholder{
+    color: #fff;
+}
+.search-box:hover .search-btn{
+  background: #fff;
+}
+.seach-btn{
+    color: #fff;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ff6e02;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear .3s;
+    margin-left: 20px;
+}
+.search-text{
+    color: #fff;
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    transition: all linear .3s;
+    line-height: 40px;
+    width: 0px;
+}
+/* ========== NAV-BAR END CSS ========== */
+
+
+
+/* ========== BANNER START CSS ========== */
+#banner{
+    background: url(../images/banner.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 170px;
+    padding-bottom: 90px;
+}
+.banner-text h1{
+    font-family: 'Rancho', cursive; 
+    font-size: 80px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    
+}
+.banner-text h2{
+    font-family: 'Gudea', sans-serif;
+    font-size: 24px;
+    color: #f1f1f1;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding-bottom: 25px;
+}
+.banner-text p{
+    font-family: 'Gudea', sans-serif;
+    font-size: 16px;
+    color: #f1f1f1;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 50px;
+    text-align: justify;
+}
+.banner-text a{
+    font-family: 'Gudea', sans-serif;
+    font-size: 20px;
+    color: #f1f1f1;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    background: #ff6e02;
+    transition: all linear .3s;
+    
+    position: relative;
+    display: inline-block;
+    letter-spacing: 4px;
+}
+.banner-text a:hover{
+    background: #f1f1f1;
+    color: #ff6e02;
+    font-weight: 700;
+}
+
+    /* TYPE JS css code */
+.typed::after {
+	content: '|';
+	display: inline;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+
+/*Removes cursor that comes with typed.js*/
+.typed-cursor{
+   opacity: 0;
+	display: none;
+}
+/*Custom cursor animation*/
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+    /* TYPE JS css code END */
+
+/* ========== BANNER END CSS ========== */
+
+/* ========== ABOUT PART START CSS ========== */
+#about{
+    background: #fff;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+.about-item{
+    background: #f1f1f1;
+    padding: 30px;
+    border-radius: 20px;
+}
+.about-text{
+    margin-left: 30px;
+}
+.about-text h2{
+    font-family: 'Rancho', cursive;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    border-bottom: 3px solid #ff6e02;
+    display: inline-block;
+}
+.about-text h3{
+    font-family: 'Gudea', sans-serif;
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #222;
+    padding-top: 15px;
+    letter-spacing: 2px;
+    
+}
+.about-text span{
+    color: #ff6e02;
+    word-spacing: 2px;
+}
+.about-text p{
+    font-family: 'Gudea', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #777; 
+    line-height: 26px;
+    text-align: justify;
+    margin-bottom: 5px;
+}
+.about-text h4{
+    font-family: 'Gudea', sans-serif;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #222;
+    padding-top: 16px;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+.progress{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+/* ========== ABOUT PART END CSS ========== */
+
+
+
+/* ========== SERVICE PART START CSS ========== */
+#service{
+    background: #f1f1f1;
+    padding-top: 80px;
+    padding-bottom: 60px
+}
+.service-text{
+    background: #fff;
+    padding: 20px;
+    position: relative;
+}
+.service-item h2{
+    font-family: 'Rancho', cursive;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    border-bottom: 3px solid #ff6e02;
+    display: inline-block;
+}
+.service-text{
+    margin-top: 40px;
+}
+.service-text i{
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    color: #222;
+    line-height: 60px;
+    border: 2px solid #ff6e02;
+    border-radius: 50%;
+}
+.service-text h3{
+    font-family: 'Gudea', sans-serif;
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #222;
+    padding-top: 15px;
+    letter-spacing: 2px;
+}
+.service-text p{
+    font-family: 'Gudea', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #777; 
+    line-height: 26px;
+    padding: 0 5px;
+}
+.service-obverlay{
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background: #ff6e02;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    transition: all linear .3s;
+    opacity: 0;
+}
+.service-obverlay i{
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    color: #fff;
+    line-height: 60px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transition: all linear .3s;
+}
+.service-obverlay h3{
+    font-family: 'Gudea', sans-serif;
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #fff;
+    padding-top: 15px;
+    letter-spacing: 2px;
+    transition: all linear .3s;
+}
+.service-obverlay p{
+    font-family: 'Gudea', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #f5f5f5; 
+    line-height: 26px;
+    padding: 0 5px;
+    transition: all linear .3s;
+}
+.service-obverlay:hover{
+    opacity: 1;
+    top: -10px;
+    height: 103%;
+}
+/* ========== SERVICE PART END CSS ========== */
+
+
+
+/* ========== WORK PART START CSS ========== */
+#work{
+    background: #fff;
+    padding-top: 76px;
+    padding-bottom: 60px;
+}
+.work-item h2{
+    font-family: 'Rancho', cursive;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    border-bottom: 3px solid #ff6e02;
+    display: inline-block;
+}
+.work-item p{
+    font-family: 'Gudea', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #777; 
+    line-height: 28px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.nav-tabs .nav-link {
+    border: none;
+    background-color: #ff6e02;
+    color: #fff;
+    margin: 0 10px;
+    padding: 10px 30px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    font-size: 18px;
+    font-family: 'Gudea', sans-serif;
+
+}
+.nav-tabs {
+    border-bottom: none;
+}
+.nav-tabs .nav-link.active{
+    background-color: #28a745;
+    color: #fff;
+}
+.tab-content {
+    padding-top: 30px;
+}
+.img {
+    margin-bottom: 30px;
+}
+
+/* ========== WORK PART END CSS ========== */
+
+
+
+/* ========== TEAM PART START CSS ========== */
+#team{
+    background: url(../images/team-bg-2.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.team-item h2{
+    font-family: 'Rancho', cursive;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    border-bottom: 3px solid #ff6e02;
+    display: inline-block;
+}
+.team-item p{
+    font-family: 'Gudea', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #f1f1f1; 
+    line-height: 28px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+.team-text h3{
+    font-family: 'Rancho', cursive; 
+    font-size: 30px;
+    font-weight: 700;
+    color: #000; 
+    padding-top: 20px;
+    padding-bottom: 5px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.team-text h4{
+    font-family: 'Gudea', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #222; 
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.team-text p{
+    font-family: 'Gudea', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #777; 
+    line-height: 26px;
+    padding: 0 20px;
+    padding-top: 10px;
+}
+.team-text a{
+    font-family: 'Gudea', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000; 
+    text-transform: capitalize;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #ff6e02;
+}
+
+.team-text{
+    padding-bottom: 20px;
+    transition: all linear .3s;
+    background: rgb(255, 255, 255);
+}
+.team-img:hover .team-text{
+    background: #ff6e02;
+}
+.team-img:hover .team-text h3{
+    color: rgb(255, 255, 255);
+}
+.team-img:hover .team-text h4{
+    color: #f1f1f1;
+}
+.team-img:hover .team-text p{
+    color: #f1f1f1;
+}
+.team-img:hover .team-text a{
+    color: #fff;
+    border-bottom: 3px solid #FFF;
+}
+/* ========== TEAM PART END CSS ========== */
+
+
+
+/* ========== FEEDBACK PART START CSS ========== */
+#feedback{
+    background: #f1f1f1;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.feedback-item h2{
+    font-family: 'Rancho', cursive;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    border-bottom: 3px solid #ff6e02;
+    display: inline-block;
+}
+.feedback-item p{
+    font-family: 'Gudea', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #777; 
+    line-height: 28px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+.feedback-text .feedback-img{
+    padding: 5px;
+    background: rgba(255, 110, 2, 0.7); 
+}
+.feedback-text .feedback-img img{
+    border-radius: 10px 20px;
+}
+.feedback-text h3{
+    font-family: 'Gudea', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #777;
+    word-spacing: 5px;
+    line-height: 36px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    font-style: italic;
+}
+.feedback-text h4{
+    font-family: 'Rancho', cursive;
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+.feedback-text i{
+    color: #ff6e02;
+    font: 18px;
+    padding: 0 2px;
+}
+
+/*=== Feedback -slider === */
+.slick-dots{
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.slick-dots li{
+    margin: 0 10px;
+    display: inline-block;
+    width: 10px;
+    height: 3px;
+    text-align: center;
+    background: #222;
+    
+}
+.slick-dots button{
+    border: 0;
+    color: transparent;
+    background: #ff6e02;
+    height: 3px;
+    width: 15px;
+    opacity: 0;
+    
+}
+.slick-dots button:focus{
+    display: none;
+}
+.slick-dots li.slick-active button{
+    opacity: 1;
+    
+}
+button, input {
+    overflow: none;
+}
+/* ========== FEEDBACK PART END CSS ========== */
+
+
+
+/* ========== FOOTER PART START CSS ========== */
+#contact{
+    background: #222;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+.contact-item{
+    padding-bottom:  40px;
+}
+.contact-item h3{
+    font-family: 'Rancho', cursive;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    border-bottom: 3px solid #ff6e02;
+    display: inline-block;
+}
+.contact-social-text{
+    padding-top: 40px;
+    background: #111;
+    padding-left: 30px;
+}
+.contact-social-text h4{
+    font-family: 'Gudea', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ff6e02;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+.contact-social-text i{
+    font-size: 24px;
+    color: #777;
+    padding-top: 2px;
+}
+.contact-social-text p{
+    font-family: 'Gudea', sans-serif;
+    font-size: 18px;
+    color: #f1f1f1;
+    font-weight: 400;
+    text-align: left;
+    margin-left: -15px;
+}
+.contact-social{
+    padding-bottom: 30px;
+}
+.contact-social i{
+    font: 16px;
+    color:#fff;
+    margin-right: 10px;
+    border: 1px solid #ff6e02;
+    width: 45px;
+    height: 45px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    transition: all linear .3s;
+}
+.contact-social i:hover{
+    color: #ff6e02;
+    background: #fff;
+}
+.contact-text h4{
+    font-family: 'Gudea', sans-serif;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    padding-bottom: 15px;
+    padding-top: 30px;
+}
+.contact-text p{
+    font-family: 'Gudea', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 26px;
+    padding-bottom: 30px;
+}
+.form i{
+    font-size: 24px;
+    color: #fff;
+    padding-top: 5px;
+}
+.form input{
+    color: #fff;
+    border: none;
+    background: none;
+    border-bottom: 2px solid #ff6e02;
+    border-radius: none;
+    margin-bottom: 80px;
+    padding-bottom: 20px;
+    border-radius: inherit;
+}
+.form input:focus{
+    background: none;
+}
+.form input::placeholder{
+    font-family: 'Gudea', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    font-style: italic;
+    word-spacing: 5px;
+}
+.contact-text .form-control{
+    border-radius: none;
+    color: #fff;
+}
+.form textarea{
+    color: #fff;
+    border: none;
+    background: none;
+    border-bottom: 2px solid #ff6e02;
+    border-radius: none;
+    margin-bottom: 80px;
+}
+.form textarea:focus{
+    background: none;
+}
+.form textarea::placeholder{
+    font-family: 'Gudea', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-style: italic;
+    word-spacing: 5px;
+}
+.contact-text a{
+    font-family: 'Gudea', sans-serif;
+    color: #fff;
+    background: #ff6e02;
+    padding: 15px 180px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    margin-left: 50px;
+    transition: all linear .3s;
+}
+.contact-text i{
+    font-size: 20px;
+    color: #fff;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.contact-text a:hover{
+    background: #fff;
+    color: #ff6e02;
+}
+.contact-text a:hover i{
+    color: #ff6e02;
+}
+
+/* ========== FOOTER PART END CSS ========== */
+
+
+
+/* ========== BACK TO TOP START CSS ========== */
+.back-to-top{
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    display: ;
+}
+.back-to-top i{
+    height: 40px;
+    width: 40px;
+    background: #ff6e02;
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+/* ========== BACK TO TOP END CSS ========== */
+
+/* ========== Copy Right part CSS ========== */
+#copy{
+    background: #333;
+    padding-top: 10px;
+}
+.copy p{
+    font-family: 'Gudea', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.copy span{
+    color: #ff6e02;
+}

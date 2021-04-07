@@ -1,0 +1,245 @@
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    
+    .navbar{
+        z-index: 999;
+    }
+    button:focus {
+	outline: none;
+}
+    .navbar-toggler i{
+        color: #fff;
+    }
+    .navbar-nav {
+	text-align: center;
+    background: rgba(0, 0, 0, 0.9);
+    padding-bottom: 100px;
+}
+    .navbar .navbar-nav .nav-link {
+	line-height: 40px;
+}
+    .navbar .navbar-nav .nav-link::before {
+	display: none;
+}
+    .navbar .navbar-nav .nav-link::after {
+	display: none;
+}
+    .seach-btn {
+	margin-left: 50%;
+	margin-top: -105px;
+}
+    .search-text{
+    width: 250px;
+    margin-top: -105px;
+    margin-left: 200px;
+}
+    .about-text {
+	margin-left: 15px;
+	padding-top: 30px;
+}
+    .team-text {
+	padding-bottom: 20px;
+}
+    .team-text p {
+	padding: 0px 10px;
+	padding-top: 4px;
+    font-size: 14px;
+}
+    .feedback-text h3 {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 26px;
+	padding-top: 0px;
+	padding-bottom: 12px;
+}
+     .contact-social-text p {
+	margin-left: -70px;
+}
+    
+    
+}
+
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar{
+        z-index: 999;
+    }
+    button:focus {
+	outline: none;
+}
+    .navbar-toggler i{
+        color: #fff;
+    }
+    .navbar-nav {
+	text-align: center;
+    background: rgba(0, 0, 0, 0.9);
+    padding-bottom: 100px;
+}
+    .navbar .navbar-nav .nav-link {
+	line-height: 40px;
+}
+    .navbar .navbar-nav .nav-link::before {
+	display: none;
+}
+    .navbar .navbar-nav .nav-link::after {
+	display: none;
+}
+    .seach-btn {
+	margin-left: 50%;
+	margin-top: -105px;
+}
+    .search-text{
+    width: 250px;
+    margin-top: -105px;
+    margin-left: 100px;
+}
+    .about-text {
+	margin-left: 15px;
+	padding-top: 30px;
+}
+    #work {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+    .nav-tabs .nav-link {
+	margin: 10px 4px;
+	padding: 10px 18px;
+}
+    .team-img {
+	margin-bottom: 20px;
+}
+    .feedback-text{
+        text-align: center;
+    }
+    .contact-social-text p {
+	margin-left: -40px;
+}
+    .contact-text a {
+	padding: 15px 100px;
+}
+       
+    
+}
+
+
+/*  Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    
+    .navbar{
+        z-index: 999;
+    }
+    button:focus {
+	outline: none;
+}
+    .navbar-toggler i{
+        color: #fff;
+    }
+    .navbar-nav {
+	text-align: center;
+    background: rgba(0, 0, 0, 0.9);
+    padding-bottom: 100px;
+}
+    .seach-btn {
+	margin-left: 50%;
+	margin-top: -105px;
+}
+    .search-text{
+    width: 250px;
+    margin-top: -105px;
+    margin-left: 20px;
+}
+    .navbar .navbar-nav .nav-link {
+	line-height: 40px;
+}
+    .navbar .navbar-nav .nav-link::before {
+	display: none;
+}
+    .navbar .navbar-nav .nav-link::after {
+	display: none;
+}
+    #banner {
+	padding-top: 150px;
+	padding-bottom: 75px;
+}
+    .banner-text h1 {
+	font-size: 45px;
+}
+    .about-text {
+	margin-left: 15px;
+	padding-top: 30px;
+}
+    .about-text h4 {
+	font-size: 13px;
+}
+    .banner-text h2 {
+	font-size: 19px;
+}
+    .progress {
+	margin-bottom: 20px;
+	margin-top: 17px;
+}
+    #service {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+    #work {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+    .nav-tabs .nav-link {
+	margin: 10px 3px;
+	padding: 8px 15px;
+
+}
+    #team {
+	padding-top: 60px;
+	padding-bottom: 0px;
+}
+    .team-img {
+	margin-bottom: 20px;
+}
+    #feedback {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+    .feedback-text {
+	text-align: center;
+}
+    .contact-social i {
+	width: 35px;
+	height: 35px;
+	line-height: 30px;
+}
+    .contact-social-text i {
+	font-size: 20px;
+}
+    .contact-text h4 {
+	font-family: 'Gudea', sans-serif;
+	font-size: 15px;
+	text-align: center;
+}
+    .contact-text p {
+	font-family: 'Gudea', sans-serif;
+	font-size: 14px;
+	text-align: center;
+}
+    .contact-text i {
+	font-size: 24px;
+	padding-left: 00px;
+	padding-top: 5px;
+	margin-bottom: 20px;
+}
+    .contact-text a {
+	padding: 12px 15px;
+	margin-left: 15px;
+} 
+    
+    .copy p {
+	font-family: 'Gudea', sans-serif;
+	font-size: 13px;
+	letter-spacing: 0;
+}
+    
+}
